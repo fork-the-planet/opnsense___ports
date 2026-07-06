@@ -1,10 +1,9 @@
 PORTNAME=		openvpn
-DISTVERSION=		2.7.4
+DISTVERSION=		2.7.5
 PORTREVISION?=		0
 CATEGORIES=		security net net-vpn
 MASTER_SITES=		https://swupdate.openvpn.org/community/releases/ \
-			https://build.openvpn.net/downloads/releases/ \
-			LOCAL/mandree
+			https://build.openvpn.net/downloads/releases/
 
 MAINTAINER=		mandree@FreeBSD.org
 COMMENT?=		Secure IP/Ethernet tunnel daemon
@@ -104,7 +103,7 @@ LIB_DEPENDS+=	libinotify.so:devel/libinotify
 
 .include <bsd.port.pre.mk>
 
-.if !empty(PORT_OPTIONS:MLZO) && !empty(SSL_DEFAULT:Nbase:N*openssl*)
+.if !empty(PORT_OPTIONS:MLZO) && !empty(SSL_DEFAULT:Nbase:Nopenssl*)
 # in-depth security net if Mk/Uses/ssl.mk changes
 pre-everything::
 	@${ECHO_CMD} >&2 "ERROR: OpenVPN is not licensed to combine LZO with other OpenSSL-licensed libraries than OpenSSL. Compile against OpenSSL, or if your setups support it, disable LZO support."
@@ -149,7 +148,7 @@ post-configure:
 # for instance, pkcs11-helper:
 _tlslibs=libssl libcrypto
 post-build:
-	@a=$$(LC_ALL=C ldd -f '%o\n' ${WRKSRC}/src/openvpn/openvpn \
+	@a=$$(ldd -f '%o\n' ${WRKSRC}/src/openvpn/openvpn \
 	|	${SORT} -u) ; set -- $$(for i in ${_tlslibs} ; do ${PRINTF} '%s\n' "$$a" | ${GREP} $${i}.so | wc -l ; done | ${SORT} -u) ;\
 	if test "$$*" != "1" ; then ( set -x ; ldd -a ${WRKSRC}/src/openvpn/openvpn ) ; ${PRINTF} '%s\n' "$$a" ; ${ECHO_CMD} >&2 "${.CURDIR} FAILED: either of ${_tlslibs} libraries linked multiple times" ; ${RM} ${BUILD_COOKIE} ; exit 1 ; fi
 
