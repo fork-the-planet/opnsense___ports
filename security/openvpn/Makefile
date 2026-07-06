@@ -103,13 +103,6 @@ LIB_DEPENDS+=	libinotify.so:devel/libinotify
 
 .include <bsd.port.pre.mk>
 
-.if !empty(PORT_OPTIONS:MLZO) && !empty(SSL_DEFAULT:Nbase:Nopenssl*)
-# in-depth security net if Mk/Uses/ssl.mk changes
-pre-everything::
-	@${ECHO_CMD} >&2 "ERROR: OpenVPN is not licensed to combine LZO with other OpenSSL-licensed libraries than OpenSSL. Compile against OpenSSL, or if your setups support it, disable LZO support."
-	@${SHELL} -c 'exit 1'
-.endif
-
 post-patch:
 	${REINPLACE_CMD} -E -i '' -e 's/(user|group) nobody/\1 openvpn/' \
 		-e 's/"nobody"( after init)/"openvpn" \1/' \
