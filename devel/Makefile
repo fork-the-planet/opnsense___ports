@@ -685,6 +685,7 @@
     SUBDIR += emacs-lsp-booster
     SUBDIR += embb
     SUBDIR += emscripten
+    SUBDIR += enkits
     SUBDIR += entt
     SUBDIR += envsubst
     SUBDIR += epl.el
@@ -1294,6 +1295,7 @@
     SUBDIR += libdlmalloc
     SUBDIR += libdombey
     SUBDIR += libdparse
+    SUBDIR += libdpv
     SUBDIR += libds
     SUBDIR += libdwarf
     SUBDIR += libe
@@ -1321,6 +1323,7 @@
     SUBDIR += libffi
     SUBDIR += libffi321
     SUBDIR += libffi33
+    SUBDIR += libfigpar
     SUBDIR += libfirm
     SUBDIR += libfixposix
     SUBDIR += libfmt
@@ -1510,6 +1513,7 @@
     SUBDIR += libvanessa_socket
     SUBDIR += libvc
     SUBDIR += libversion
+    SUBDIR += libverto
     SUBDIR += libvex
     SUBDIR += libvhdi
     SUBDIR += libvirt
@@ -1711,6 +1715,7 @@
     SUBDIR += mm
     SUBDIR += modd
     SUBDIR += mold
+    SUBDIR += moon
     SUBDIR += mongo-c-driver
     SUBDIR += mongo-cxx-driver
     SUBDIR += mono-addins
@@ -4310,6 +4315,7 @@
     SUBDIR += php-ice37
     SUBDIR += php-libawl
     SUBDIR += php-maxminddb
+    SUBDIR += php-pie
     SUBDIR += php82-ffi
     SUBDIR += php82-gettext
     SUBDIR += php82-intl
@@ -4350,6 +4356,16 @@
     SUBDIR += php85-sysvsem
     SUBDIR += php85-sysvshm
     SUBDIR += php85-tokenizer
+    SUBDIR += php86-ffi
+    SUBDIR += php86-gettext
+    SUBDIR += php86-intl
+    SUBDIR += php86-pcntl
+    SUBDIR += php86-readline
+    SUBDIR += php86-shmop
+    SUBDIR += php86-sysvmsg
+    SUBDIR += php86-sysvsem
+    SUBDIR += php86-sysvshm
+    SUBDIR += php86-tokenizer
     SUBDIR += phpunit10
     SUBDIR += phpunit11
     SUBDIR += phpunit12
@@ -4922,9 +4938,6 @@
     SUBDIR += py-diskcache
     SUBDIR += py-distlib
     SUBDIR += py-distributed
-    SUBDIR += py-dj52-django-rq
-    SUBDIR += py-dj52-graphene-django
-    SUBDIR += py-dj52-strawberry-graphql
     SUBDIR += py-dj60-django-rq
     SUBDIR += py-dj60-strawberry-graphql
     SUBDIR += py-django-rq
@@ -5095,7 +5108,6 @@
     SUBDIR += py-glance-store
     SUBDIR += py-glob2
     SUBDIR += py-glom
-    SUBDIR += py-goodreads
     SUBDIR += py-google-cloud-iam
     SUBDIR += py-google-crc32c
     SUBDIR += py-google-i18n-address
@@ -6034,7 +6046,6 @@
     SUBDIR += py-rapidfuzz-capi
     SUBDIR += py-ratelim
     SUBDIR += py-ratelimiter
-    SUBDIR += py-rauth
     SUBDIR += py-raven
     SUBDIR += py-rchitect
     SUBDIR += py-re-assert
@@ -6326,6 +6337,7 @@
     SUBDIR += py-types-psutil
     SUBDIR += py-types-psycopg2
     SUBDIR += py-types-python-dateutil
+    SUBDIR += py-types-pytz
     SUBDIR += py-types-pyyaml
     SUBDIR += py-types-requests
     SUBDIR += py-types-retry
@@ -6491,7 +6503,6 @@
     SUBDIR += py-yacs
     SUBDIR += py-yamllint
     SUBDIR += py-yamlloader
-    SUBDIR += py-yamlordereddictloader
     SUBDIR += py-yappi
     SUBDIR += py-yapps2
     SUBDIR += py-yarg

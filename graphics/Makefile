@@ -267,7 +267,6 @@
     SUBDIR += gimp-app
     SUBDIR += gimp-beautify-plugin
     SUBDIR += gimp-data-extras
-    SUBDIR += gimp-jxl-plugin
     SUBDIR += gimp-lensfun-plugin
     SUBDIR += gimp-lqr-plugin
     SUBDIR += gimp-refocus-plugin
@@ -852,6 +851,8 @@
     SUBDIR += php84-gd
     SUBDIR += php85-exif
     SUBDIR += php85-gd
+    SUBDIR += php86-exif
+    SUBDIR += php86-gd
     SUBDIR += phplot
     SUBDIR += picpuz
     SUBDIR += piddle
@@ -932,7 +933,6 @@
     SUBDIR += py-contextily
     SUBDIR += py-descartes
     SUBDIR += py-diplib
-    SUBDIR += py-dj52-sorl-thumbnail
     SUBDIR += py-dj60-sorl-thumbnail
     SUBDIR += py-django-easy-thumbnails
     SUBDIR += py-djvulibre
@@ -1056,6 +1056,7 @@
     SUBDIR += py-rich-pixels
     SUBDIR += py-rlpycairo
     SUBDIR += py-s2
+    SUBDIR += py-sane
     SUBDIR += py-scikit-image
     SUBDIR += py-seqdiag
     SUBDIR += py-simplejpeg
@@ -1067,6 +1068,7 @@
     SUBDIR += py-svgwrite
     SUBDIR += py-term-image
     SUBDIR += py-termtosvg
+    SUBDIR += py-tesserocr
     SUBDIR += py-tifffile
     SUBDIR += py-tkcolorpicker
     SUBDIR += py-toyplot
@@ -1186,6 +1188,7 @@
     SUBDIR += satty
     SUBDIR += scale2x
     SUBDIR += scantailor
+    SUBDIR += scantpaper
     SUBDIR += scr2png
     SUBDIR += scrot
     SUBDIR += scwm-icons

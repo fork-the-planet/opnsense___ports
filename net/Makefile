@@ -1,7 +1,7 @@
     COMMENT = Networking tools
 
-    SUBDIR += 3proxy
     SUBDIR += 389-ds-base
+    SUBDIR += 3proxy
     SUBDIR += 44bsd-rdist
     SUBDIR += 6tunnel
     SUBDIR += R-cran-pingr
@@ -177,8 +177,6 @@
     SUBDIR += frp
     SUBDIR += frr10
     SUBDIR += frr10-pythontools
-    SUBDIR += frr8
-    SUBDIR += frr8-pythontools
     SUBDIR += frr9
     SUBDIR += frr9-pythontools
     SUBDIR += fspclient
@@ -440,7 +438,6 @@
     SUBDIR += libusrsctp
     SUBDIR += libvncserver
     SUBDIR += libwebsockets
-    SUBDIR += libyang
     SUBDIR += libyang2
     SUBDIR += libyang3
     SUBDIR += libzapojit
@@ -1016,6 +1013,9 @@
     SUBDIR += php85-ldap
     SUBDIR += php85-soap
     SUBDIR += php85-sockets
+    SUBDIR += php86-ldap
+    SUBDIR += php86-soap
+    SUBDIR += php86-sockets
     SUBDIR += phpldapadmin
     SUBDIR += pimcommon
     SUBDIR += pimd
@@ -1095,6 +1095,7 @@
     SUBDIR += py-ldap3
     SUBDIR += py-ldapdomaindump
     SUBDIR += py-ldappool
+    SUBDIR += py-lib389
     SUBDIR += py-libcloud
     SUBDIR += py-libdnet
     SUBDIR += py-magic-wormhole
@@ -1262,6 +1263,7 @@
     SUBDIR += ripe-whois
     SUBDIR += rosenpass
     SUBDIR += rospo
+    SUBDIR += route-summarization
     SUBDIR += routinator
     SUBDIR += rpki-client
     SUBDIR += rscsi
@@ -1646,6 +1648,7 @@
     SUBDIR += tsctp
     SUBDIR += tsocks
     SUBDIR += ttl
+    SUBDIR += tun2socks
     SUBDIR += tunneller
     SUBDIR += turnserver
     SUBDIR += u6rd
@@ -1662,8 +1665,6 @@
     SUBDIR += ulxmlrpcpp
     SUBDIR += unfs3
     SUBDIR += unison
-    SUBDIR += unison248
-    SUBDIR += unison251
     SUBDIR += unison253
     SUBDIR += unix2tcp
     SUBDIR += urelay
